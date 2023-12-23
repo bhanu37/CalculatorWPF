@@ -1,0 +1,7 @@
+C:\Users\bhanu\Downloads\Installers\Calculator.pdb
+C:\Users\bhanu\Downloads\Installers\D3DCompiler_47_cor3.dll
+C:\Users\bhanu\Downloads\Installers\PenImc_cor3.dll
+C:\Users\bhanu\Downloads\Installers\PresentationNative_cor3.dll
+C:\Users\bhanu\Downloads\Installers\vcruntime140_cor3.dll
+C:\Users\bhanu\Downloads\Installers\wpfgfx_cor3.dll
+C:\Users\bhanu\Downloads\Installers\Calculator.exe

@@ -1,0 +1,65 @@
+﻿<Application x:Class="Calculator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <LinearGradientBrush x:Key="opeBtnGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#EEF4ED" Offset="1"/>
+            <GradientStop Color="#185298" Offset="0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="numBtnGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#8DA9C4" Offset="1"/>
+            <GradientStop Color="#185298" Offset="0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="editBtnGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#A6E1FA" Offset="1"/>
+            <GradientStop Color="#005A76" Offset="0"/>
+        </LinearGradientBrush>
+        
+        <LinearGradientBrush x:Key="eqlBtnGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF9F9F" Offset="1"/>
+            <GradientStop Color="#185298" Offset="0"/>
+        </LinearGradientBrush>
+        
+        <!--Buttons Resources-->
+        <Style x:Key="btnCommonProp" TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10" />
+                </Style>
+            </Style.Resources>
+        </Style>
+
+        <Style x:Key="operationBtn" TargetType="Button" BasedOn="{StaticResource btnCommonProp}">
+            <Setter Property="Background" Value="{StaticResource opeBtnGradient}"/>
+        </Style>
+        
+        <Style x:Key="editBtn" TargetType="Button" BasedOn="{StaticResource btnCommonProp}">
+            <Setter Property="Background" Value="{StaticResource editBtnGradient}"/>
+        </Style>
+
+        <Style x:Key="numberBtn" TargetType="Button" BasedOn="{StaticResource btnCommonProp}">
+            <Setter Property="Background" Value="{StaticResource numBtnGradient}"/>
+        </Style>
+        
+        <Style x:Key="eqlBtn" TargetType="Button" BasedOn="{StaticResource btnCommonProp}">
+            <Setter Property="Background" Value="{StaticResource eqlBtnGradient}"/>
+        </Style>
+        
+
+        <!--StackPanels Resources-->
+        <Style x:Key="historyContant" TargetType="StackPanel">
+        </Style>
+        
+        <!--Labels Resources-->
+        <Style x:Key="labelProp" TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Application.Resources>
+</Application>
